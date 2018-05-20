@@ -5,6 +5,8 @@
 # > count_multibyte_char('¥1000')
 # 1
 
+string = '¥1000'
+
 def count_multibyte_char(string)
     big_bytes = []
     string.each_char {|c| big_bytes << c if (c.bytesize > 1)}
